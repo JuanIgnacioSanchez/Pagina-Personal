@@ -1,0 +1,129 @@
+main {
+  background: url(../imagenes/background.png) fixed center no-repeat;
+  background-size: cover;
+  padding: 0 0 5%;
+
+  .container_index {
+    height: 100%;
+
+    .inicio {
+      height: 93vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      .title-index {
+        color: map-get($color, shadow-secondary-9);
+      }
+
+      .eslogan-index {
+        color: map-get($color, shadow-secondary-6);
+        font-size: 100%;
+        padding: 3% 0;
+      }
+    }
+
+    .div-index {
+      background-color: map-get($color, primary-color);
+      box-shadow: 0 0 10px map-get($color, shadow-secondary-3);
+      margin: 15% 0;
+      padding: 10% 3%;
+      @include transition-1(300ms);
+
+      .text_index {
+        margin: 0;
+        color: map-get($color, shadow-secondary-7);
+        text-align: center;
+      }
+
+      .title-div {
+        color: map-get($color, shadow-secondary-9);
+        padding-bottom: 5%;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+
+        .li_index {
+          padding-bottom: 2%;
+        }
+      }
+
+      &:hover {
+        background-color: map-get($color, shadow-primary-9);
+        box-shadow: 0 0 20px map-get($color, shadow-secondary-5);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    .container_index {
+      .inicio {
+        height: 85vh;
+        .title-index {
+          font-size: 250%;
+        }
+
+        .eslogan-index {
+          font-size: 140%;
+        }
+      }
+
+      .div-index {
+        font-size: 150%;
+
+        .title-div {
+          font-size: 170%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    .container_index {
+      .div-index {
+        padding: 6% 3%;
+        font-size: 120%;
+
+        .title-div {
+          font-size: 140%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    .container_index {
+      .inicio {
+        .title-index {
+          font-size: 240%;
+        }
+
+        .eslogan-index {
+          font-size: 130%;
+          padding: 2% 0;
+        }
+      }
+
+      .div-index {
+        font-size: 140%;
+        padding: 4% 3%;
+
+        .title-div {
+          font-size: 170%;
+          padding-bottom: 3%;
+        }
+      }
+    }
+  }
+}

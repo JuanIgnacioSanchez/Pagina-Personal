@@ -1,0 +1,247 @@
+main {
+  .container-con {
+    .title-con {
+      color: map-get($color, shadow-secondary-9);
+      font-size: 200%;
+      text-align: center;
+      padding: 10% 0;
+    }
+
+    .article-left-con {
+      display: flex;
+      padding: 3%;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .left-con-title {
+        padding-bottom: 2%;
+        color: map-get($color, shadow-secondary-8);
+      }
+
+      .p-left-con {
+        text-align: center;
+        color: map-get($color, shadow-secondary-8);
+      }
+
+      .form-con {
+        width: 70%;
+        padding-top: 2%;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .input-con {
+          margin: 2% 0;
+          padding: 1%;
+          width: 90%;
+          border: 0;
+          border-radius: 5px;
+          @include transition-1(300ms);
+
+          &:hover {
+            background-color: map-get($color, shadow-primary-8);
+            color: map-get($color, shadow-secondary-8);
+            box-shadow: 0 0 10px map-get($color, shadow-secondary-8);
+          }
+        }
+
+        .textarea {
+          margin: 4% 0;
+          width: 90%;
+          height: 170px;
+          padding: 1%;
+          border: 0;
+          border-radius: 5px;
+          @include transition-1(300ms);
+
+          &:hover {
+            background-color: map-get($color, shadow-primary-8);
+            color: map-get($color, shadow-secondary-8);
+            box-shadow: 0 0 10px map-get($color, shadow-secondary-8);
+          }
+        }
+
+        .submit-con {
+          width: 50%;
+          background-color: map-get($color, shadow-secondary-5);
+          box-shadow: 0 0 10px map-get($color, shadow-secondary-3);
+
+          &:hover {
+            color: map-get($color, shadow-secondary-8);
+          }
+        }
+      }
+    }
+
+    .article-right-con {
+      padding: 10% 5% 3%;
+      text-align: center;
+
+      .text-con {
+        color: map-get($color, shadow-secondary-7);
+      }
+
+      .animation {
+        padding: 10% 0 0;
+
+        img {
+          width: 80%;
+          animation: flotar 4s ease-in-out infinite;
+        }
+
+        @keyframes flotar {
+          0% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(-8%);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    .container-con {
+      .title-con {
+        font-size: 290%;
+        padding: 10% 0 4%;
+      }
+
+      .article-left-con {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 3%;
+
+        .left-con-title {
+          font-size: 190%;
+        }
+
+        .p-left-con {
+          font-size: 130%;
+        }
+
+        .form-con {
+          width: 40%;
+        }
+      }
+
+      .article-right-con {
+        padding: 5% 5% 3%;
+
+        .right-con-text {
+          font-size: 130%;
+        }
+
+        .animation {
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    .container-con {
+      .title-con {
+        font-size: 240%;
+        padding: 8% 0 4%;
+      }
+
+      .article-left-con {
+        .left-con-title {
+          font-size: 170%;
+        }
+
+        .p-left-con {
+          font-size: 120%;
+        }
+
+        .form-con {
+          width: 30%;
+        }
+      }
+
+      .article-right-con {
+        .right-con-text {
+          font-size: 120%;
+        }
+
+        .animation {
+          img {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    main {
+      .container-con {
+        .title-con {
+          font-size: 260%;
+          padding: 5% 0 2%;
+        }
+
+        .section-contact {
+          padding: 3% 1%;
+          display: grid;
+          grid-template-columns: 60% auto;
+
+          .article-left-con {
+            .left-con-title {
+              font-size: 180%;
+              padding: 1% 2% 3%;
+              width: 70%;
+              text-align: center;
+            }
+
+            .p-left-con {
+              text-align: center;
+              width: 70%;
+              font-size: 130%;
+            }
+
+            .form-con {
+              width: 60%;
+
+              .submit-con {
+                width: 30%;
+              }
+            }
+          }
+
+          .article-right-con {
+            padding: 0 10%;
+            align-self: center;
+
+            .right-con-text {
+              padding: 2% 0;
+              font-size: 130%;
+            }
+
+            .animation {
+              img {
+                width: 40%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

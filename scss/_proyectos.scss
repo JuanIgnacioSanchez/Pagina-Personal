@@ -1,0 +1,153 @@
+main {
+  .container-proyect {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+
+    .title-proyect {
+      color: map-get($color, shadow-secondary-9);
+      font-size: 200%;
+      text-align: center;
+      padding: 15% 0;
+    }
+
+    .gallery-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .card-proyect {
+        background-color: map-get($color, shadow-primary-8);
+        width: 65%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-self: center;
+        align-items: center;
+        margin: 5%;
+        border: 1px solid map-get($color, shadow-secondary-6);
+        border-radius: 15px;
+        box-shadow: 0 0 10px map-get($color, shadow-secondary-3);
+        @include transition-1(300ms);
+
+        &:hover {
+          transform: translateY(-3%);
+          box-shadow: 0 0 20px map-get($color, shadow-secondary-3);
+        }
+
+        img {
+          width: 100%;
+          text-shadow: 0 0 5px map-get($color, primary-color);
+          background-color: map-get($color, shadow-secondary-8);
+          border-radius: 15px;
+        }
+
+        .title-card {
+          padding: 2% 0;
+          color: map-get($color, shadow-secondary-9);
+        }
+
+        .link-card {
+          text-align: center;
+          text-decoration: none;
+          width: 40%;
+          margin: 0 0 5%;
+          border: 0;
+          border-radius: 5px;
+          background-color: map-get($color, shadow-primary-1);
+          color: map-get($color, shadow-secondary-7);
+          @include transition-1(200ms);
+
+          &:hover {
+            box-shadow: 0 0 5px map-get($color, shadow-secondary-5);
+            background-color: map-get($color, shadow-secondary-7);
+            color: map-get($color, shadow-primary-9);
+            font-weight: 400;
+            text-decoration: none;
+          }
+
+          &:visited {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    .container-proyect {
+      .title-proyect {
+        font-size: 290%;
+        padding: 10% 0;
+      }
+
+      .card-proyect {
+        width: 60%;
+
+        .title-card {
+          font-size: 200%;
+        }
+
+        .link-card {
+          font-size: 150%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    .container-proyect {
+      .title-proyect {
+        font-size: 240%;
+        padding: 8% 0 4%;
+      }
+
+      .gallery-cards {
+        .card-proyect {
+          width: 35%;
+
+          .title-card {
+            font-size: 170%;
+          }
+
+          .link-card {
+            font-size: 130%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    .container-proyect {
+      .title-proyect {
+        font-size: 260%;
+        padding: 5% 0 2%;
+      }
+
+      .gallery-cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .card-proyect {
+          width: 30%;
+
+          .title-card {
+            font-size: 170%;
+          }
+
+          .link-card {
+            font-size: 130%;
+          }
+        }
+      }
+    }
+  }
+}
