@@ -44,15 +44,14 @@ main {
           align-items: center;
           width: 100%;
           border: 0;
-          border-radius: 5px;
+          border-radius: 15px;
           background-color: map-get($color, shadow-primary-1);
           color: map-get($color, shadow-secondary-7);
           @include transition-1(200ms);
 
           &:hover {
             box-shadow: 0 0 5px map-get($color, shadow-secondary-5);
-            background-color: map-get($color, shadow-secondary-7);
-            color: map-get($color, shadow-primary-9);
+            background-color: map-get($color, shadow-secondary-2);
             font-weight: 400;
             text-decoration: none;
           }
