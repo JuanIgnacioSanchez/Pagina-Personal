@@ -5,6 +5,7 @@ main {
       font-size: 200%;
       text-align: center;
       padding: 10% 0;
+      font-family: $font2;
     }
 
     .article-left-con {
@@ -16,11 +17,13 @@ main {
       .left-con-title {
         padding-bottom: 2%;
         color: map-get($color, shadow-secondary-8);
+        font-family: $font2;
       }
 
       .p-left-con {
         text-align: center;
         color: map-get($color, shadow-secondary-8);
+        font-family: $font3;
       }
 
       .form-con {
@@ -86,21 +89,17 @@ main {
         padding: 10% 0 0;
 
         img {
-          width: 80%;
-          animation: flotar 4s ease-in-out infinite;
+          width: 50%;
+          filter: drop-shadow(0 0 10px map-get($color, shadow-secondary-7));
+          animation: rotar 6s linear infinite;
         }
 
-        @keyframes flotar {
-          0% {
-            transform: translateY(0);
+        @keyframes rotar {
+          from {
+            transform: rotateY(0deg);
           }
-
-          50% {
-            transform: translateY(-8%);
-          }
-
-          100% {
-            transform: translateY(0);
+          to {
+            transform: rotateY(360deg);
           }
         }
       }

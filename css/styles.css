@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rokkitt", serif;
 }
 
 header {
@@ -33,6 +32,7 @@ header .navbar .container-fluid {
 header .navbar .container-fluid .navbar-brand {
   width: 30%;
   color: white;
+  font-family: "Rokkitt", serif;
   transition: all 200ms ease;
 }
 header .navbar .container-fluid .navbar-brand .logo-navbar {
@@ -67,6 +67,7 @@ header .navbar .container-fluid .navbar-toggler {
 header .navbar .container-fluid .nav-link {
   color: white;
   padding: 3%;
+  font-family: "Josefin Sans", sans-serif;
   transition: all 400ms ease;
   font-weight: 300;
 }
@@ -214,11 +215,13 @@ main .container_index .inicio {
 }
 main .container_index .inicio .title-index {
   color: rgba(255, 255, 255, 0.9);
+  font-family: "Rokkitt", serif;
 }
 main .container_index .inicio .eslogan-index {
   color: rgba(255, 255, 255, 0.6);
   font-size: 100%;
   padding: 3% 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 main .container_index .div-index {
   background-color: black;
@@ -231,10 +234,14 @@ main .container_index .div-index .text_index {
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 110%;
 }
 main .container_index .div-index .title-div {
   color: rgba(255, 255, 255, 0.9);
   padding-bottom: 5%;
+  font-size: 140%;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 main .container_index .div-index ul {
   list-style: none;
@@ -301,6 +308,7 @@ main .container-proyect .title-proyect {
   font-size: 200%;
   text-align: center;
   padding: 15% 0;
+  font-family: "Josefin Sans", sans-serif;
 }
 main .container-proyect .gallery-cards {
   display: flex;
@@ -308,6 +316,7 @@ main .container-proyect .gallery-cards {
   align-items: center;
 }
 main .container-proyect .gallery-cards .card-proyect {
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.8);
   width: 65%;
   height: auto;
@@ -335,6 +344,7 @@ main .container-proyect .gallery-cards .card-proyect img {
 main .container-proyect .gallery-cards .card-proyect .title-card {
   padding: 2% 0;
   color: rgba(255, 255, 255, 0.9);
+  font-family: "Josefin Sans", sans-serif;
 }
 main .container-proyect .gallery-cards .card-proyect .link-card {
   text-align: center;
@@ -413,6 +423,7 @@ main .container-con .title-con {
   font-size: 200%;
   text-align: center;
   padding: 10% 0;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 main .container-con .article-left-con {
   display: flex;
@@ -423,10 +434,12 @@ main .container-con .article-left-con {
 main .container-con .article-left-con .left-con-title {
   padding-bottom: 2%;
   color: rgba(255, 255, 255, 0.8);
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 main .container-con .article-left-con .p-left-con {
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
+  font-family: "Josefin Sans", sans-serif;
 }
 main .container-con .article-left-con .form-con {
   width: 70%;
@@ -482,18 +495,16 @@ main .container-con .article-right-con .animation {
   padding: 10% 0 0;
 }
 main .container-con .article-right-con .animation img {
-  width: 80%;
-  animation: flotar 4s ease-in-out infinite;
+  width: 50%;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+  animation: rotar 6s linear infinite;
 }
-@keyframes flotar {
-  0% {
-    transform: translateY(0);
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
   }
-  50% {
-    transform: translateY(-8%);
-  }
-  100% {
-    transform: translateY(0);
+  to {
+    transform: rotateY(360deg);
   }
 }
 

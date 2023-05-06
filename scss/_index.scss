@@ -16,12 +16,14 @@ main {
 
       .title-index {
         color: map-get($color, shadow-secondary-9);
+        font-family: $font1;
       }
 
       .eslogan-index {
         color: map-get($color, shadow-secondary-6);
         font-size: 100%;
         padding: 3% 0;
+        font-family: $font3;
       }
     }
 
@@ -36,11 +38,15 @@ main {
         margin: 0;
         color: map-get($color, shadow-secondary-7);
         text-align: center;
+        font-family: $font2;
+        font-size: 110%;
       }
 
       .title-div {
         color: map-get($color, shadow-secondary-9);
         padding-bottom: 5%;
+        font-size: 140%;
+        font-family: $font2;
       }
 
       ul {
