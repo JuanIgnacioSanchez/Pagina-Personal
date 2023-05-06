@@ -37,24 +37,12 @@ main {
           box-shadow: 0 0 20px map-get($color, shadow-secondary-3);
         }
 
-        img {
-          width: 100%;
-          text-shadow: 0 0 5px map-get($color, primary-color);
-          background-color: map-get($color, shadow-secondary-8);
-          border-radius: 15px;
-        }
-
-        .title-card {
-          padding: 2% 0;
-          color: map-get($color, shadow-secondary-9);
-          font-family: $font3;
-        }
-
         .link-card {
           text-align: center;
           text-decoration: none;
-          width: 40%;
-          margin: 0 0 5%;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
           border: 0;
           border-radius: 5px;
           background-color: map-get($color, shadow-primary-1);
@@ -72,6 +60,19 @@ main {
           &:visited {
             text-decoration: none;
           }
+
+          img {
+            width: 100%;
+            text-shadow: 0 0 5px map-get($color, primary-color);
+            background-color: map-get($color, shadow-secondary-8);
+            border-radius: 15px;
+          }
+
+          .title-card {
+            color: map-get($color, shadow-secondary-9);
+            font-family: $font3;
+            margin: 3%;
+          }
         }
       }
     }
@@ -86,15 +87,17 @@ main {
         padding: 10% 0;
       }
 
-      .card-proyect {
-        width: 60%;
+      .gallery-cards {
+        .card-proyect {
+          width: 50%;
 
-        .title-card {
-          font-size: 200%;
-        }
+          .link-card {
+            font-size: 150%;
 
-        .link-card {
-          font-size: 150%;
+            .title-card {
+              font-size: 200%;
+            }
+          }
         }
       }
     }
@@ -113,12 +116,12 @@ main {
         .card-proyect {
           width: 35%;
 
-          .title-card {
-            font-size: 170%;
-          }
-
           .link-card {
             font-size: 130%;
+
+            .title-card {
+              font-size: 170%;
+            }
           }
         }
       }
@@ -142,12 +145,12 @@ main {
         .card-proyect {
           width: 30%;
 
-          .title-card {
-            font-size: 170%;
-          }
-
           .link-card {
             font-size: 130%;
+
+            .title-card {
+              font-size: 170%;
+            }
           }
         }
       }

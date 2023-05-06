@@ -6,6 +6,7 @@ main {
       text-align: center;
       padding: 10% 0;
       font-family: $font2;
+      font-weight: 500;
     }
 
     .article-left-con {
@@ -18,12 +19,14 @@ main {
         padding-bottom: 2%;
         color: map-get($color, shadow-secondary-8);
         font-family: $font2;
+        font-weight: 500;
       }
 
       .p-left-con {
         text-align: center;
         color: map-get($color, shadow-secondary-8);
         font-family: $font3;
+        font-weight: 600;
       }
 
       .form-con {
@@ -67,8 +70,8 @@ main {
 
         .submit-con {
           width: 50%;
-          background-color: map-get($color, shadow-secondary-5);
-          box-shadow: 0 0 10px map-get($color, shadow-secondary-3);
+          background-color: map-get($color, shadow-secondary-7);
+          box-shadow: 0 0 10px map-get($color, shadow-secondary-5);
 
           &:hover {
             color: map-get($color, shadow-secondary-8);
@@ -80,6 +83,7 @@ main {
     .article-right-con {
       padding: 10% 5% 3%;
       text-align: center;
+      font-weight: 600;
 
       .text-con {
         color: map-get($color, shadow-secondary-7);

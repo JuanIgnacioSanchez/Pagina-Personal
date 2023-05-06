@@ -1,5 +1,5 @@
 main {
-  background: url(../imagenes/background.png) fixed center no-repeat;
+  background: url(../imagenes/fondo.jpg) fixed center no-repeat;
   background-size: cover;
   padding: 0 0 5%;
 
@@ -15,15 +15,78 @@ main {
       text-align: center;
 
       .title-index {
+        width: 18ch;
+        display: block;
+        white-space: nowrap;
+        border-right: 3px solid;
         color: map-get($color, shadow-secondary-9);
         font-family: $font1;
+        font-weight: 500;
+        animation: typing 3s steps(18), blink 0.5s infinite step-end alternate;
+        overflow: hidden;
+
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+        }
+
+        @keyframes blink {
+          50% {
+            border-color: transparent;
+          }
+        }
       }
 
       .eslogan-index {
-        color: map-get($color, shadow-secondary-6);
+        color: map-get($color, shadow-secondary-8);
         font-size: 100%;
         padding: 3% 0;
         font-family: $font3;
+        font-weight: 600;
+      }
+    }
+
+    .div-index-animation {
+      margin: 5% 0;
+      padding: 5% 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .img-1 {
+        filter: drop-shadow(0 0 10px map-get($color, shadow-secondary-4));
+        width: 60%;
+        animation: rotate 6s linear infinite;
+
+        @keyframes rotate {
+          from {
+            transform: rotateY(0deg);
+          }
+          to {
+            transform: rotateY(360deg);
+          }
+        }
+      }
+
+      .img-2 {
+        filter: drop-shadow(0 0 10px map-get($color, shadow-secondary-4));
+        width: 60%;
+        animation: float 4s ease-in-out infinite;
+
+        @keyframes float {
+          0% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(-10%);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
+        }
       }
     }
 
@@ -81,6 +144,19 @@ main {
         }
       }
 
+      .div-index-animation {
+        margin: 0;
+        padding: 0;
+
+        .img-1 {
+          width: 25%;
+        }
+
+        .img-2 {
+          width: 25%;
+        }
+      }
+
       .div-index {
         font-size: 150%;
 
@@ -111,6 +187,7 @@ main {
   main {
     .container_index {
       .inicio {
+        height: 80vh;
         .title-index {
           font-size: 240%;
         }
