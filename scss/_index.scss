@@ -1,13 +1,12 @@
 main {
   background: url(../imagenes/fondo-portfolio.png) fixed center no-repeat;
-  background-size: cover;
   padding: 0 0 5%;
 
   .container_index {
     height: 100%;
 
     .inicio {
-      height: 93vh;
+      height: 95vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -47,7 +46,7 @@ main {
       }
 
       .scroll-index {
-        margin-top: 10%;
+        padding-top: 15%;
         font-size: 80%;
         color: map-get($color, shadow-secondary-6);
         font-family: $font3;
@@ -55,7 +54,8 @@ main {
     }
 
     .div-index-animation {
-      padding: 2% 0;
+      padding: 10% 0;
+      margin: 10% 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -99,7 +99,7 @@ main {
     .div-index {
       background-color: map-get($color, primary-color);
       box-shadow: 0 0 10px map-get($color, shadow-secondary-3);
-      margin: 15% 0;
+      margin: 30% 0;
       padding: 10% 3%;
       @include transition-1(300ms);
 
@@ -138,6 +138,8 @@ main {
 
 @media (min-width: 768px) {
   main {
+    background-size: cover;
+    padding: 0 0 20%;
     .container_index {
       .inicio {
         height: 85vh;
@@ -150,7 +152,7 @@ main {
         }
 
         .scroll-index {
-          font-size: 100%;
+          font-size: 120%;
         }
       }
 
@@ -159,11 +161,11 @@ main {
         padding: 0;
 
         .img-1 {
-          width: 25%;
+          width: 35%;
         }
 
         .img-2 {
-          width: 25%;
+          width: 35%;
         }
       }
 
@@ -181,13 +183,26 @@ main {
 @media (min-width: 992px) {
   main {
     .container_index {
+      .inicio {
+        height: 110vh;
+
+        .scroll-index {
+          padding: 6%;
+        }
+      }
       .div-index {
-        padding: 4% 3%;
+        margin: 20% 0;
+        padding: 2%;
         font-size: 120%;
 
         .title-div {
           font-size: 140%;
+          padding: 2% 0 3%;
         }
+      }
+
+      .div-index-animation {
+        padding: 0;
       }
     }
   }
@@ -197,7 +212,8 @@ main {
   main {
     .container_index {
       .inicio {
-        height: 80vh;
+        height: 85vh;
+
         .title-index {
           font-size: 240%;
         }
@@ -208,21 +224,32 @@ main {
         }
 
         .scroll-index {
+          padding: 3%;
           font-size: 110%;
         }
       }
 
       .div-index-animation {
-        padding: 2%;
+        padding: 0;
+        margin: 0;
+
+        .img-1 {
+          width: 25%;
+        }
+
+        .img-2 {
+          width: 25%;
+        }
       }
 
       .div-index {
         font-size: 140%;
         padding: 2%;
+        margin: 15% 0;
 
         .title-div {
           font-size: 170%;
-          padding-bottom: 3%;
+          padding: 0 0 2%;
         }
       }
     }
