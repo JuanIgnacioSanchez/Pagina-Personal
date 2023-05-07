@@ -198,7 +198,7 @@ footer .footer-text {
   }
 }
 main {
-  background: url(../imagenes/fondo.jpg) fixed center no-repeat;
+  background: url(../imagenes/fondo-portfolio.png) fixed center no-repeat;
   background-size: cover;
   padding: 0 0 5%;
 }
@@ -240,6 +240,12 @@ main .container_index .inicio .eslogan-index {
   padding: 3% 0;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
+}
+main .container_index .inicio .scroll-index {
+  margin-top: 10%;
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Josefin Sans", sans-serif;
 }
 main .container_index .div-index-animation {
   padding: 2% 0;
@@ -319,6 +325,9 @@ main .container_index .div-index:hover {
   main .container_index .inicio .eslogan-index {
     font-size: 140%;
   }
+  main .container_index .inicio .scroll-index {
+    font-size: 100%;
+  }
   main .container_index .div-index-animation {
     margin: 0;
     padding: 0;
@@ -338,7 +347,7 @@ main .container_index .div-index:hover {
 }
 @media (min-width: 992px) {
   main .container_index .div-index {
-    padding: 6% 3%;
+    padding: 4% 3%;
     font-size: 120%;
   }
   main .container_index .div-index .title-div {
@@ -356,9 +365,15 @@ main .container_index .div-index:hover {
     font-size: 130%;
     padding: 2% 0;
   }
+  main .container_index .inicio .scroll-index {
+    font-size: 110%;
+  }
+  main .container_index .div-index-animation {
+    padding: 2%;
+  }
   main .container_index .div-index {
     font-size: 140%;
-    padding: 4% 3%;
+    padding: 2%;
   }
   main .container_index .div-index .title-div {
     font-size: 170%;
@@ -489,7 +504,7 @@ main .container-con .title-con {
   font-size: 200%;
   text-align: center;
   padding: 10% 0;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
 }
 main .container-con .article-left-con {
