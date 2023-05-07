@@ -199,6 +199,7 @@ footer .footer-text {
 }
 main {
   background: url(../imagenes/fondo-portfolio.png) fixed center no-repeat;
+  background-size: cover;
   padding: 0 0 5%;
 }
 main .container_index {
