@@ -93,6 +93,7 @@ main {
         padding: 10% 0 0;
 
         img {
+          z-index: -1;
           width: 50%;
           filter: drop-shadow(0 0 10px map-get($color, shadow-secondary-7));
           animation: rotar 6s linear infinite;
