@@ -198,7 +198,7 @@ footer .footer-text {
   }
 }
 main {
-  background: url(../imagenes/fondo-portfolio.png) fixed center no-repeat;
+  background: url(../imagenes/2.png) fixed center no-repeat;
   background-size: cover;
   padding: 0 0 5%;
 }
@@ -286,8 +286,9 @@ main .container_index .div-index-animation .img-2 {
 main .container_index .div-index {
   background-color: black;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  margin: 30% 0;
+  margin: 30% 8%;
   padding: 10% 3%;
+  border-radius: 15px;
   transition: all 300ms ease;
 }
 main .container_index .div-index .text_index {
