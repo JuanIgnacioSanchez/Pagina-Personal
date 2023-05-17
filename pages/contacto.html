@@ -83,21 +83,35 @@
             <p class="p-left-con text-con" data-aos="fade-down-left">
               Deja tu mensaje y en breve su consulta será respondida.
             </p>
-            <form class="form-con">
+            <form
+              class="form-con"
+              action="https://formspree.io/f/xjvdzleq"
+              method="POST"
+            >
               <input
+                required
                 class="input-con"
-                type="text"
+                type="name"
                 placeholder="Nombre y Apellido"
               />
-              <input class="input-con" type="text" placeholder="Teléfono" />
               <input
+                required
                 class="input-con"
-                type="text"
+                type="tel"
+                placeholder="Teléfono"
+              />
+              <input
+                required
+                class="input-con"
+                type="email"
+                name="email"
                 placeholder="Correo electronico"
               />
               <textarea
+                style="resize: none"
+                required
                 class="textarea"
-                name="consulta"
+                name="message"
                 placeholder="Consulta"
               ></textarea>
               <input

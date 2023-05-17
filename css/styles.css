@@ -359,7 +359,7 @@ main .container_index .div-index:hover {
     padding: 6%;
   }
   main .container_index .div-index {
-    margin: 20% 0;
+    margin: 20% 10%;
     padding: 2%;
     font-size: 120%;
   }
@@ -399,7 +399,7 @@ main .container_index .div-index:hover {
   main .container_index .div-index {
     font-size: 140%;
     padding: 2%;
-    margin: 15% 0;
+    margin: 15%;
   }
   main .container_index .div-index .title-div {
     font-size: 170%;
@@ -476,6 +476,9 @@ main .container-proyect .gallery-cards .card-proyect .link-card .title-card {
 }
 
 @media (min-width: 768px) {
+  main {
+    padding: 0 0 8%;
+  }
   main .container-proyect .title-proyect {
     font-size: 290%;
     padding: 10% 0;
@@ -621,6 +624,9 @@ main .container-con .article-right-con .animation img {
 }
 
 @media (min-width: 768px) {
+  main {
+    padding: 0 0 8%;
+  }
   main .container-con .title-con {
     font-size: 290%;
     padding: 10% 0 4%;
@@ -648,7 +654,7 @@ main .container-con .article-right-con .animation img {
     font-size: 130%;
   }
   main .container-con .article-right-con .animation img {
-    width: 60%;
+    width: 35%;
   }
 }
 @media (min-width: 992px) {

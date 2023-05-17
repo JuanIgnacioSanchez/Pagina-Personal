@@ -114,6 +114,8 @@ main {
 
 @media (min-width: 768px) {
   main {
+    padding: 0 0 8%;
+
     .container-con {
       .title-con {
         font-size: 290%;
@@ -149,7 +151,7 @@ main {
 
         .animation {
           img {
-            width: 60%;
+            width: 35%;
           }
         }
       }
